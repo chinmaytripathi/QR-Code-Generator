@@ -1,0 +1,31 @@
+body{
+    background-image: url('../static/2.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    font-family: "Comic Sans Ms", cursive, sans-serif;
+    font-size: 20px;
+}
+
+.main_header{
+    background-color: coral;
+    text-align: left;
+}
+
+.btn{
+    background-color: rgb(255, 0, 0); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Comic Sans Ms";
+}
+
+#showcase{
+    text-align: left;
+    font-size: 16px;
+}

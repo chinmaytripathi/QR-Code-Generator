@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <title>SkyQR</title>
+    </head>
+    <body>
+        <div class="main_header">
+            <h2>SkyQR - Your Simple QR Code Generator</h2>
+        </div>
+        <div id="showcase">
+            <div><h4>Key Features:</h4>
+                <p>- Easy QR Code Creation</p>
+                <p>- Save Time</p>
+                <p>- Enhance Marketing Efforts</p>
+                <p>- Improve User Engagement</p>
+            </div>
+            <div>
+                <h4>How It Works:</h4>
+                <p>Step 1: Enter any URL or data into the below dialog box for which you want to generate QR Code</p>
+                <p>Step 2: Click on Generate QR button</p>
+            </div>
+        </div>
+        <form action="/generate_qr" method="GET">
+            <label>Data/URL: </label>
+            <input type="text" name="data" placeholder="Enter URL or text"/>
+            <br/>
+            <br/>
+            <button class="btn" type="submit">Generate QR</button>
+        </form>
+        <div>
+            <img src="{{url_for('static', filename='req_img.png')}}" alt="QRCode" width="400rem"/>
+        </div>
+        <div id="showcase">
+            <h4>Testimonials</h4>
+            <p>"SkyQR has made QR code generation a breeze! Highly recommended." - John Doe
+            </p>
+            <p>"I love how easy it is to customize my QR codes with SkyQR. Fantastic tool!" - Jane Smith
+            </p>
+        </div>
+    </body>
+</html>
